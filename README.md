@@ -8,15 +8,15 @@ Try to solve labs from CSAPP and CMU 15-213.
 
 ## Progress
 
-- [] Lab 1 - Data Lab
-- [] Lab 2 - Bomb Lab
-- [] Lab 3 - Attack Lab
-- [] Lab 4 - Architecture Lab
-- [] Lab 5 - Cache Lab
-- [] Lab 6 - Performance Lab
-- [] Lab 7 - Shell Lab
-- [] Lab 8 - Malloc Lab
-- [] Lab 9 - Proxy Lab
+- [ ] Lab 1 - Data Lab
+- [ ] Lab 2 - Bomb Lab
+- [ ] Lab 3 - Attack Lab
+- [ ] Lab 4 - Architecture Lab
+- [ ] Lab 5 - Cache Lab
+- [ ] Lab 6 - Performance Lab
+- [ ] Lab 7 - Shell Lab
+- [ ] Lab 8 - Malloc Lab
+- [ ] Lab 9 - Proxy Lab
 
 ## Reference
 
