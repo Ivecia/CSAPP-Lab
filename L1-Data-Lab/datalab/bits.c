@@ -152,7 +152,7 @@ int bitXor(int x, int y) {
  *   Rating: 1
  */
 int tmin(void) {
-  return (1 << 31);
+  return 1 << 31;
 }
 //2
 /*
@@ -163,7 +163,6 @@ int tmin(void) {
  *   Rating: 1
  */
 int isTmax(int x) {
-  // TODO: Need to be improved?
   return !((~x) ^ (x + 1)) ^ !(~x);
 }
 /* 
@@ -175,8 +174,8 @@ int isTmax(int x) {
  *   Rating: 2
  */
 int allOddBits(int x) {
-  // TODO: Need to be improved?
-  return !(x & (x >> 16) & ((0xAA << 8) | 0xAA) ^ ((0xAA << 8) | 0xAA));
+  int mask = (0xAA << 8) | 0xAA;
+  return !((x & (x >> 16) & mask) ^ mask);
 }
 /* 
  * negate - return -x 
@@ -209,7 +208,8 @@ int isAsciiDigit(int x) {
  *   Rating: 3
  */
 int conditional(int x, int y, int z) {
-  return 2;
+  int mask = (!x) << 31 >> 31;
+  return (y & ~mask) | (z & mask);
 }
 /* 
  * isLessOrEqual - if x <= y  then return 1, else return 0 
@@ -219,7 +219,7 @@ int conditional(int x, int y, int z) {
  *   Rating: 3
  */
 int isLessOrEqual(int x, int y) {
-  return 2;
+  return !(((~x) + 1 + y) >> 31 & 1) | ((x >> 31 & 1) & (y >> 31 ^ 1));
 }
 //4
 /* 
@@ -231,7 +231,7 @@ int isLessOrEqual(int x, int y) {
  *   Rating: 4 
  */
 int logicalNeg(int x) {
-  return 2;
+  return (((x >> 31) | (((~x) + 1) >> 31)) & 1) ^ 1;
 }
 /* howManyBits - return the minimum number of bits required to represent x in
  *             two's complement
