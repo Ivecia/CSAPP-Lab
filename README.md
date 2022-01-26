@@ -9,7 +9,7 @@ Try to solve labs from CSAPP and CMU 15-213.
 ## Progress
 
 - [X] Lab 1 - Data Lab (122 total operators)
-- [ ] Lab 2 - Bomb Lab (4/6)
+- [ ] Lab 2 - Bomb Lab (5/6)
 - [ ] Lab 3 - Attack Lab
 - [ ] Lab 4 - Architecture Lab
 - [ ] Lab 5 - Cache Lab
