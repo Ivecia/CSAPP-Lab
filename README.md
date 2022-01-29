@@ -10,7 +10,7 @@ Try to solve labs from CSAPP and CMU 15-213.
 
 - [X] Lab 1 - Data Lab (122 total operators)
 - [X] Lab 2 - Bomb Lab (7/6, solved secret_phase)
-- [ ] Lab 3 - Attack Lab
+- [ ] Lab 3 - Attack Lab (4/5)
 - [ ] Lab 4 - Architecture Lab
 - [ ] Lab 5 - Cache Lab
 - [ ] Lab 6 - Performance Lab
