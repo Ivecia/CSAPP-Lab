@@ -4,5 +4,9 @@ L1-Data-Lab/datalab/dlc
 L1-Data-Lab/datalab/fshow
 L1-Data-Lab/datalab/ishow
 
+# L3 - Attack Lab
+L3-Attack-Lab/attacklab/ctarget.txt
+L3-Attack-Lab/attacklab/rtarget.txt
+
 # Local Test
 LocalTest/
